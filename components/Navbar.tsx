@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className="flex items-center gap-4">
                             <a href="https://github.com/Mostafaeldiwany123" target="_blank" rel="noreferrer" className="text-white/70 hover:text-white transition-colors"><Github size={20} /></a>
                             <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
-                            <a href="https://instagram.com/daily_tifa1234/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-pink-500 transition-colors"><Instagram size={20} /></a>
+                            <a href="https://www.instagram.com/mostafa_eldiwany123/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-pink-500 transition-colors"><Instagram size={20} /></a>
                             <a href="https://youtube.com/@DailyTifa" target="_blank" rel="noreferrer" className="text-white/70 hover:text-red-500 transition-colors"><Youtube size={20} /></a>
                             <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-theme hover:text-black transition-colors transform hover:scale-105 duration-200">
                                 Let's Talk
@@ -73,7 +73,7 @@ const Navbar = () => {
                                 <div className="flex gap-6">
                                     <a href="https://github.com/Mostafaeldiwany123" target="_blank" rel="noreferrer" className="text-white/70 hover:text-theme"><Github size={24} /></a>
                                     <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-blue-400"><Linkedin size={24} /></a>
-                                    <a href="https://instagram.com/daily_tifa1234/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-pink-500"><Instagram size={24} /></a>
+                                    <a href="https://www.instagram.com/mostafa_eldiwany123/" target="_blank" rel="noreferrer" className="text-white/70 hover:text-pink-500"><Instagram size={24} /></a>
                                     <a href="https://youtube.com/@DailyTifa" target="_blank" rel="noreferrer" className="text-white/70 hover:text-red-500"><Youtube size={24} /></a>
                                 </div>
                                 <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="w-full text-center bg-white text-black py-4 rounded-xl font-bold mt-4">

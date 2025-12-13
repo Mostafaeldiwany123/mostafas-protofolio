@@ -27,7 +27,7 @@ const Footer = () => {
                     <p>© {new Date().getFullYear()} Mostafa Eldiwany.</p>
                     <div className="flex gap-6">
                         <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors">LinkedIn</a>
-                        <a href="https://instagram.com/daily_tifa1234/" target="_blank" rel="noreferrer" className="hover:text-pink-500 transition-colors">Instagram</a>
+                        <a href="https://www.instagram.com/mostafa_eldiwany123/" target="_blank" rel="noreferrer" className="hover:text-pink-500 transition-colors">Instagram</a>
                         <a href="https://youtube.com/@DailyTifa" target="_blank" rel="noreferrer" className="hover:text-red-500 transition-colors">YouTube</a>
                         <a href="https://github.com/Mostafaeldiwany123" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Github</a>
                     </div>
