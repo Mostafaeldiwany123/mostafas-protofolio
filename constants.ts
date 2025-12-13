@@ -86,14 +86,14 @@ export const STATS: StatItem[] = [
 ];
 
 export const STACK = [
-  "html", "css", "tailwind", "js", "ts", "react", "firebase", "github", "vite"
+  "html", "css", "tailwind", "js", "ts", "react", "firebase", "github", "vite", "cpp"
 ];
 
 export const getTechName = (id: string) => {
   const map: Record<string, string> = {
     html: "HTML5", css: "CSS3", tailwind: "Tailwind", js: "JavaScript",
     ts: "TypeScript", react: "React", firebase: "Firebase",
-    nodejs: "Node.js", vite: "Vite", github: "GitHub"
+    nodejs: "Node.js", vite: "Vite", github: "GitHub", cpp: "C++"
   };
   return map[id] || id.toUpperCase();
 }

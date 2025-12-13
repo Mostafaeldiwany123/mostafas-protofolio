@@ -134,8 +134,9 @@ const Hero = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <motion.div
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20"
+            <motion.a
+                href="#stats"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20 hover:text-white transition-colors cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
@@ -146,7 +147,7 @@ const Hero = () => {
                 >
                     <ArrowDown size={20} />
                 </motion.div>
-            </motion.div>
+            </motion.a>
         </section>
     );
 };

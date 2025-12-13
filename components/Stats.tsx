@@ -4,7 +4,7 @@ import { THEME_COLOR } from '../constants';
 
 const Stats = () => {
     return (
-        <section className="px-4 md:px-10 py-20 max-w-7xl mx-auto">
+        <section id="stats" className="px-4 md:px-10 py-20 max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
 
                 {/* Card 1: YouTube - Large Emphasis */}

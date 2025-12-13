@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, color, link, pr
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="h-screen flex items-center justify-center sticky top-0">
+    <div ref={container} className="h-[70vh] flex items-center justify-center sticky top-0">
       <motion.div
         style={{ scale, backgroundColor: color, top: `calc(10vh + ${i * 20}px)` }}
         className="flex flex-col relative w-[95vw] md:w-[70vw] aspect-video rounded-[2rem] border border-white/10 overflow-hidden origin-top shadow-2xl"
@@ -101,10 +101,10 @@ const Gallery = () => {
   });
 
   return (
-    <section ref={container} className="relative bg-black pt-32 pb-32">
-      <div className="text-center mb-24 px-6 relative z-10">
-        <span className="text-theme font-mono uppercase tracking-widest text-sm bg-theme/10 px-3 py-1 rounded-full border border-theme/20">Lifestyle</span>
-        <h2 className="text-4xl md:text-6xl font-display font-bold mt-6 text-white">Life & Craft</h2>
+    <section ref={container} className="relative bg-black pt-16 pb-32">
+      <div className="text-center mb-8 px-6 relative z-10">
+        <span className="text-theme font-mono uppercase tracking-widest text-sm bg-theme/10 px-3 py-1 rounded-full border border-theme/20">Highlights</span>
+        <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 text-white">Gallery</h2>
       </div>
 
       {items.map((item, i) => {

@@ -16,7 +16,7 @@ const About = () => {
                         <p className="font-mono text-sm text-white/70 leading-relaxed">
                             <span className="text-purple-400">const</span> <span className="text-blue-400">aboutMe</span> = <span className="text-yellow-400">{"{"}</span><br />
                             &nbsp;&nbsp;student: <span className="text-green-400">"CIS at EUI"</span>,<br />
-                            &nbsp;&nbsp;stack: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"TS"</span>, <span className="text-green-400">"Firebase"</span>, <span className="text-green-400">"AI"</span>],<br />
+                            &nbsp;&nbsp;stack: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"TS"</span>, <span className="text-green-400">"Supabase"</span>, <span className="text-green-400">"AI"</span>],<br />
                             &nbsp;&nbsp;typingSpeed: <span className="text-orange-400">125</span>,<br />
                             &nbsp;&nbsp;hobbies: [<span className="text-green-400">"Speedcubing"</span>, <span className="text-green-400">"Content Creation"</span>]<br />
                             <span className="text-yellow-400">{"}"}</span>;
@@ -33,11 +33,11 @@ const About = () => {
                         viewport={{ once: true }}
                         className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight"
                     >
-                        Bridging logic <br />
-                        <span className="text-white/30">&</span> creativity.
+                        Turning ideas <br />
+                        <span className="text-white/30">into</span> reality.
                     </motion.h2>
                     <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                        I'm a CIS student at EUI, passionate about AI-driven development and automation. I build creative, intelligent interfaces using React and TypeScript. Speedcubing has been my passion since childhood—teaching me that every problem has an optimal solution.
+                        I study CIS at EUI and use AI to build better websites. I create fast and beautiful interfaces with React and TypeScript. Speedcubing taught me how to solve problems quickly and efficiently.
                     </p>
 
                     <div className="grid grid-cols-2 gap-8">
@@ -46,8 +46,8 @@ const About = () => {
                             <p className="text-sm text-white/40">Projects Completed</p>
                         </div>
                         <div>
-                            <h4 className="text-2xl font-bold text-white mb-1">100%</h4>
-                            <p className="text-sm text-white/40">Client Satisfaction</p>
+                            <h4 className="text-2xl font-bold text-white mb-1">2+ Years</h4>
+                            <p className="text-sm text-white/40">Experience</p>
                         </div>
                     </div>
                 </div>

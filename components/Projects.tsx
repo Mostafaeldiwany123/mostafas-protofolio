@@ -50,17 +50,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             {project.desc}
           </p>
         </div>
-
-        <div className="mt-auto pt-6 border-t border-white/5 flex items-center justify-between">
-          <div className="flex flex-wrap gap-2">
-            {project.tech.slice(0, 3).map((t: string, i: number) => (
-              <span key={i} className="text-[10px] font-mono uppercase tracking-wider text-white/40 px-2 py-1 bg-white/5 rounded-md">
-                {t}
-              </span>
-            ))}
-          </div>
-          {/* Optional: Add GitHub link if available in data, or just a small icon */}
-        </div>
       </div>
     </motion.div>
   );

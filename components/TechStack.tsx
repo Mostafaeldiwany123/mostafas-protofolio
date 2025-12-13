@@ -9,7 +9,7 @@ const TechStack = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Technologies</h2>
                     <p className="text-white/50 max-w-xl mx-auto">
-                        A curated list of the tools and frameworks I use to bring products to life.
+                        Coding languages I learned over the past 2 years.
                     </p>
                 </div>
 
