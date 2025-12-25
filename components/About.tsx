@@ -16,9 +16,9 @@ const About = () => {
                         <p className="font-mono text-sm text-white/70 leading-relaxed">
                             <span className="text-purple-400">const</span> <span className="text-blue-400">aboutMe</span> = <span className="text-yellow-400">{"{"}</span><br />
                             &nbsp;&nbsp;student: <span className="text-green-400">"CIS at EUI"</span>,<br />
-                            &nbsp;&nbsp;stack: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"TS"</span>, <span className="text-green-400">"Supabase"</span>, <span className="text-green-400">"AI"</span>],<br />
-                            &nbsp;&nbsp;typingSpeed: <span className="text-orange-400">125</span>,<br />
-                            &nbsp;&nbsp;hobbies: [<span className="text-green-400">"Speedcubing"</span>, <span className="text-green-400">"Content Creation"</span>]<br />
+                            &nbsp;&nbsp;stack: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"Next.js"</span>, <span className="text-green-400">"Supabase"</span>, <span className="text-green-400">"AI"</span>],<br />
+                            &nbsp;&nbsp;focus: <span className="text-green-400">"Performance"</span>,<br />
+                            &nbsp;&nbsp;delivery: <span className="text-green-400">"Fast"</span><br />
                             <span className="text-yellow-400">{"}"}</span>;
                         </p>
                     </div>
@@ -37,7 +37,7 @@ const About = () => {
                         <span className="text-white/30">into</span> reality.
                     </motion.h2>
                     <p className="text-lg text-white/60 mb-8 leading-relaxed">
-                        I study CIS at EUI and use AI to build better websites. I create fast and beautiful interfaces with React and TypeScript. Speedcubing taught me how to solve problems quickly and efficiently.
+                        I specialize in building high-converting landing pages and complex web applications. My focus is on speed, aesthetic design, and user experience. I handle the technical details so you can focus on your business.
                     </p>
 
                     <div className="grid grid-cols-2 gap-8">

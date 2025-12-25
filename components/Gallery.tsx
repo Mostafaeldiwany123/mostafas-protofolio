@@ -49,14 +49,18 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, color, link, pr
     offset: ['start end', 'start start']
   });
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="h-[70vh] flex items-center justify-center sticky top-0">
+    <div ref={container} className="h-[60vh] md:h-[75vh] flex items-center md:items-start justify-center sticky top-[20vh] md:top-[10vh]">
       <motion.div
-        style={{ scale, backgroundColor: color, top: `calc(10vh + ${i * 20}px)` }}
-        className="flex flex-col relative w-[95vw] md:w-[70vw] aspect-video rounded-[2rem] border border-white/10 overflow-hidden origin-top shadow-2xl"
+        style={{
+          scale,
+          backgroundColor: color,
+          top: `calc(-5vh + ${i * 25}px)`
+        }}
+        className="flex flex-col relative w-full md:w-[70vw] aspect-square md:aspect-video rounded-[2rem] border border-white/10 overflow-hidden origin-top shadow-2xl"
       >
         {/* Image Section - Full Size */}
         <div className="w-full h-full relative overflow-hidden bg-black">
@@ -64,7 +68,7 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, color, link, pr
             <img
               src={src}
               alt={title}
-              className="w-full h-full object-contain md:object-cover"
+              className="w-full h-full object-cover"
             />
           </motion.div>
 
@@ -73,19 +77,21 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, color, link, pr
         </div>
 
         {/* Content Section - Overlay at Bottom */}
-        <div className="absolute bottom-0 left-0 w-full p-4 md:p-10 flex flex-col md:flex-row md:items-end justify-between gap-2 md:gap-4 z-10">
+        <div className="absolute bottom-0 left-0 w-full p-4 md:p-8 flex flex-col md:flex-row md:items-end justify-between gap-2 md:gap-4 z-10">
           <div>
             {link ? (
-              <a href={link} target="_blank" rel="noreferrer" className="text-xl md:text-5xl font-display font-bold text-white mb-1 md:mb-3 hover:text-theme transition-colors">{title}</a>
+              <a href={link} target="_blank" rel="noreferrer" className="text-xl md:text-3xl font-display font-bold text-white mb-1 hover:text-theme transition-colors flex items-center gap-2">
+                {title} <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-sans font-normal text-white/80">Visit</span>
+              </a>
             ) : (
-              <h2 className="text-xl md:text-5xl font-display font-bold text-white mb-1 md:mb-3">{title}</h2>
+              <h2 className="text-xl md:text-3xl font-display font-bold text-white mb-1">{title}</h2>
             )}
-            <p className="hidden md:block text-white/80 text-lg max-w-xl leading-relaxed">
+            <p className="hidden md:block text-white/80 text-sm max-w-lg leading-relaxed">
               {description.split('**').map((part, i) => i % 2 === 1 ? <span key={i} className="text-theme font-semibold">{part}</span> : part)}
             </p>
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <div className="text-6xl font-display font-bold text-white/10">0{i + 1}</div>
+            <div className="text-4xl font-display font-bold text-white/10">0{i + 1}</div>
           </div>
         </div>
       </motion.div>
@@ -101,16 +107,18 @@ const Gallery = () => {
   });
 
   return (
-    <section ref={container} className="relative bg-black pt-16 pb-32">
-      <div className="text-center mb-8 px-6 relative z-10">
+    <section ref={container} className="relative bg-black pt-16 pb-16 md:pb-32">
+      <div className="text-center mb-8 md:mb-16 px-6 relative z-10">
         <span className="text-theme font-mono uppercase tracking-widest text-sm bg-theme/10 px-3 py-1 rounded-full border border-theme/20">Highlights</span>
         <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 text-white">Gallery</h2>
       </div>
 
-      {items.map((item, i) => {
-        const targetScale = 1 - ((items.length - i) * 0.05);
-        return <Card key={i} i={i} {...item} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} />
-      })}
+      <div className="flex flex-col items-center">
+        {items.map((item, i) => {
+          const targetScale = 1 - ((items.length - i) * 0.05);
+          return <Card key={i} i={i} {...item} progress={scrollYProgress} range={[i * (1 / items.length), 1]} targetScale={targetScale} />
+        })}
+      </div>
     </section>
   )
 }

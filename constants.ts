@@ -86,7 +86,7 @@ export const STATS: StatItem[] = [
 ];
 
 export const STACK = [
-  "html", "css", "tailwind", "js", "ts", "react", "firebase", "github", "vite", "cpp"
+  "html", "css", "tailwind", "js", "ts", "react", "github", "cpp" // removed firebase, vite
 ];
 
 export const getTechName = (id: string) => {

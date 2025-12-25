@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Gallery from './components/Gallery';
 import About from './components/About';
+import Hobbies from './components/Hobbies';
 import Footer from './components/Footer';
 import { BackgroundEffects, CustomCursor } from './components/ui/Effects';
 
@@ -18,7 +19,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen bg-[#030303] text-white selection:bg-theme selection:text-black font-sans ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
-      
+
       <BackgroundEffects />
       <CustomCursor />
       <Navbar />
@@ -27,9 +28,10 @@ export default function App() {
         <Hero />
         <Stats />
         <Projects />
-        <Gallery />
         <TechStack />
+        <Gallery />
         <About />
+        <Hobbies />
       </main>
 
       <Footer />

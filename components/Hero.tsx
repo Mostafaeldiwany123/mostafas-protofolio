@@ -1,153 +1,147 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
-
-const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.15,
-            delayChildren: 0.3,
-        }
-    }
-};
-
-const itemVariants = {
-    hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
-    visible: {
-        opacity: 1,
-        y: 0,
-        filter: 'blur(0px)',
-        transition: { duration: 0.8, ease: [0.25, 1, 0.5, 1] }
-    }
-};
-
-const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8, rotate: -5 },
-    visible: {
-        opacity: 1,
-        scale: 1,
-        rotate: 3,
-        transition: { duration: 1.2, ease: [0.25, 1, 0.5, 1], delay: 0.2 }
-    }
-};
+import { MapPin, GraduationCap, Clock, Globe, Code2, Download, Mail } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center px-4 md:px-10 pt-32 lg:pt-20 pb-16 lg:pb-0 overflow-hidden">
+        <section className="relative min-h-screen flex items-start justify-center px-4 md:px-10 pt-32 md:pt-48 pb-20 overflow-hidden">
 
-            {/* Background Abstract Glow - Subtle ambient light */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-theme/5 rounded-full blur-[120px] pointer-events-none translate-x-1/2 -translate-y-1/2"
-            />
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2, delay: 0.5 }}
-                className="absolute bottom-0 left-0 w-[50vw] h-[50vw] bg-purple-500/5 rounded-full blur-[120px] pointer-events-none -translate-x-1/2 translate-y-1/2"
-            />
+            {/* Background elements */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(0,188,212,0.05),transparent_70%)]" />
 
-            <div className="z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="z-10 w-full max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
-                {/* Left Side: Text Content */}
-                <motion.div
-                    className="flex flex-col items-center lg:items-start text-center lg:text-left"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
+                    {/* Left Column: Intro & Pitch (7 cols) */}
                     <motion.div
-                        variants={itemVariants}
-                        className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 rounded-full mb-8"
+                        className="lg:col-span-7 flex flex-col gap-8 items-center text-center lg:items-start lg:text-left"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
                     >
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                        </span>
-                        <span className="text-xs font-mono uppercase tracking-widest text-white/80">Available for hire</span>
+
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme/10 border border-theme/20 text-theme text-xs font-mono mb-6">
+                                AVAILABLE FOR WORK
+                            </div>
+
+                            <h1 className="text-5xl md:text-7xl font-display font-bold text-white tracking-tight leading-[1.1] mb-6">
+                                Hi, I'm <span className="text-theme">Mostafa.</span>
+                            </h1>
+
+                            <p className="text-2xl text-white/80 font-light leading-relaxed">
+                                I am a <b>Software Developer</b> and a <b>CIS Student</b>.
+                            </p>
+                        </div>
+
+                        <div className="prose prose-invert max-w-xl">
+                            <p className="text-lg text-white/60 leading-relaxed">
+                                I build websites that solve problems. I don't just write code; I create solutions that are fast, reliable, and look great on any device.
+                            </p>
+                            <p className="text-lg text-white/60 leading-relaxed mt-4">
+                                My promise is simple: <b>High-quality work delivered on time, every time.</b> Whether you need a personal portfolio or a complex web application, I have the skills and the drive to make it happen.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-4 mt-2 justify-center lg:justify-start">
+                            <a href="#work" className="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-theme transition-colors duration-300 flex items-center gap-2">
+                                Check My Work
+                            </a>
+                            <a href="mailto:mostafafafa6@gmail.com" className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-xl hover:bg-white/10 transition-colors duration-300 flex items-center gap-2">
+                                <Mail size={20} />
+                                Contact Me
+                            </a>
+                        </div>
                     </motion.div>
 
-                    <motion.h1
-                        className="font-display font-bold text-6xl md:text-7xl lg:text-8xl tracking-tighter mb-6 relative z-10"
-                        variants={itemVariants}
-                    >
-                        MOSTAFA <br />
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40 pb-4 -mb-4">
-                            ELDIWANY
-                        </span>
-                    </motion.h1>
-
-                    <motion.p
-                        className="text-lg md:text-xl text-white/60 max-w-lg leading-relaxed font-light mb-10"
-                        variants={itemVariants}
-                    >
-                        <b>Developer • CIS Student • Content Creator • #1 Egyptian Speedcubing Record Holder</b><br />
-                        Building creative, intelligent, and interactive experiences through code.
-                    </motion.p>
-
+                    {/* Right Column: The "CV Card" (5 cols) */}
                     <motion.div
-                        variants={itemVariants}
-                        className="flex gap-4"
+                        className="lg:col-span-5"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <a href="#work" className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-theme transition-colors duration-300">
-                            View Work
-                        </a>
-                        <a href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" target="_blank" rel="noreferrer" className="px-8 py-3 border border-white/20 text-white font-medium rounded-full hover:bg-white/5 transition-colors duration-300">
-                            Contact Me
-                        </a>
-                    </motion.div>
-                </motion.div>
+                        <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-8 relative overflow-hidden">
 
-                {/* Right Side: Image with Frame */}
-                <motion.div
-                    className="relative flex justify-center items-center"
-                    variants={imageVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
-                        {/* Decorative Rotating Ring Behind */}
-                        <motion.div
-                            className="absolute inset-0 border border-white/5 rounded-full scale-110"
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        />
+                            {/* Card Header */}
+                            <div className="flex items-center gap-4 mb-8 border-b border-white/10 pb-6">
+                                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/20">
+                                    <img src="/images/profile.png" alt="Mostafa" className="w-full h-full object-cover" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-white">Mostafa Eldiwany</h3>
+                                    <p className="text-white/50 text-sm">Full Stack Developer</p>
+                                </div>
+                            </div>
 
-                        {/* Main Image Container */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-[2rem] p-2 backdrop-blur-sm border border-white/10 rotate-3 transition-transform hover:rotate-0 duration-500">
-                            <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-[#0a0a0a] relative">
-                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 z-10" />
-                                <img
-                                    src="/images/profile.png"
-                                    alt="Mostafa Eldiwany"
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                />
+                            {/* Info Grid */}
+                            <div className="grid gap-6">
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/70">
+                                        <MapPin size={20} />
+                                    </div>
+                                    <div>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">LOCATION</p>
+                                        <p className="text-white font-medium">Cairo, Egypt</p>
+                                        <p className="text-white/50 text-sm">Remote & On-site</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/70">
+                                        <GraduationCap size={20} />
+                                    </div>
+                                    <div>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">EDUCATION</p>
+                                        <p className="text-white font-medium">CIS Student @ EUI</p>
+                                        <p className="text-white/50 text-sm">Egypt University of Informatics</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/70">
+                                        <Code2 size={20} />
+                                    </div>
+                                    <div>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">CORE STACK</p>
+                                        <div className="flex flex-wrap gap-2 mt-1">
+                                            <span className="px-2 py-1 bg-white/10 rounded text-xs text-white/90">React</span>
+                                            <span className="px-2 py-1 bg-white/10 rounded text-xs text-white/90">Next.js</span>
+                                            <span className="px-2 py-1 bg-white/10 rounded text-xs text-white/90">TypeScript</span>
+                                            <span className="px-2 py-1 bg-white/10 rounded text-xs text-white/90">Supabase</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/70">
+                                        <Clock size={20} />
+                                    </div>
+                                    <div>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">TURNAROUND</p>
+                                        <p className="text-theme font-bold">48 Hours or Less</p>
+                                        <p className="text-white/50 text-sm">For standard landing pages</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/70">
+                                        <Globe size={20} />
+                                    </div>
+                                    <div>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">LANGUAGES</p>
+                                        <p className="text-white font-medium">English (Fluent)</p>
+                                        <p className="text-white/50 text-sm">Arabic (Native)</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
 
+                </div>
             </div>
-
-            {/* Scroll Indicator */}
-            <motion.a
-                href="#stats"
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20 hover:text-white transition-colors cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.5, duration: 0.8 }}
-            >
-                <motion.div
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                >
-                    <ArrowDown size={20} />
-                </motion.div>
-            </motion.a>
         </section>
     );
 };
