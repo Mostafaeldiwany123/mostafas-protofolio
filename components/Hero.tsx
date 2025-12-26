@@ -30,13 +30,13 @@ const Hero = () => {
                             </h1>
 
                             <p className="text-2xl text-white/80 font-light leading-relaxed">
-                                I am a <b>Software Developer</b> and a <b>CIS Student</b>.
+                                I am a <b>Software Developer</b> building modern web experiences.
                             </p>
                         </div>
 
                         <div className="prose prose-invert max-w-xl">
                             <p className="text-lg text-white/60 leading-relaxed">
-                                I build websites that solve problems. I don't just write code; I create solutions that are fast, reliable, and look great on any device.
+                                I build websites that solve problems. I don't just write code, i create solutions that are fast, reliable, and look great on any device.
                             </p>
                             <p className="text-lg text-white/60 leading-relaxed mt-4">
                                 My promise is simple: <b>High-quality work delivered on time, every time.</b> Whether you need a personal portfolio or a complex web application, I have the skills and the drive to make it happen.
@@ -93,8 +93,8 @@ const Hero = () => {
                                         <GraduationCap size={20} />
                                     </div>
                                     <div>
-                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">EDUCATION</p>
-                                        <p className="text-white font-medium">CIS Student @ EUI</p>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider font-mono">BACKGROUND</p>
+                                        <p className="text-white font-medium">Computer Science</p>
                                         <p className="text-white/50 text-sm">Egypt University of Informatics</p>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ const Hero = () => {
                                     <div>
                                         <p className="text-white/40 text-xs uppercase tracking-wider font-mono">TURNAROUND</p>
                                         <p className="text-theme font-bold">48 Hours or Less</p>
-                                        <p className="text-white/50 text-sm">For standard landing pages</p>
+                                        <p className="text-white/50 text-sm">For any project</p>
                                     </div>
                                 </div>
 

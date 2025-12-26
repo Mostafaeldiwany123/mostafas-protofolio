@@ -15,7 +15,7 @@ const About = () => {
                         </div>
                         <p className="font-mono text-sm text-white/70 leading-relaxed">
                             <span className="text-purple-400">const</span> <span className="text-blue-400">aboutMe</span> = <span className="text-yellow-400">{"{"}</span><br />
-                            &nbsp;&nbsp;student: <span className="text-green-400">"CIS at EUI"</span>,<br />
+                            &nbsp;&nbsp;role: <span className="text-green-400">"Full Stack Dev"</span>,<br />
                             &nbsp;&nbsp;stack: [<span className="text-green-400">"React"</span>, <span className="text-green-400">"Next.js"</span>, <span className="text-green-400">"Supabase"</span>, <span className="text-green-400">"AI"</span>],<br />
                             &nbsp;&nbsp;focus: <span className="text-green-400">"Performance"</span>,<br />
                             &nbsp;&nbsp;delivery: <span className="text-green-400">"Fast"</span><br />
@@ -46,8 +46,8 @@ const About = () => {
                             <p className="text-sm text-white/40">Projects Completed</p>
                         </div>
                         <div>
-                            <h4 className="text-2xl font-bold text-white mb-1">2+ Years</h4>
-                            <p className="text-sm text-white/40">Experience</p>
+                            <h4 className="text-2xl font-bold text-white mb-1">High</h4>
+                            <p className="text-sm text-white/40">Quality</p>
                         </div>
                     </div>
                 </div>

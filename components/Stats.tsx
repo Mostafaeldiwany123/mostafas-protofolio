@@ -65,9 +65,9 @@ const Stats = () => {
                             <span className="font-mono text-sm text-blue-400">RELIABILITY</span>
                         </div>
 
-                        <h3 className="text-4xl font-display font-bold text-white mb-4">2+ Years</h3>
+                        <h3 className="text-4xl font-display font-bold text-white mb-4">Quality Work</h3>
                         <p className="text-white/60 leading-relaxed text-sm">
-                            I may be young, but I've spent alot of hours coding. I've encountered and solved the bugs that slow others down, ensuring a smooth process for you.
+                            I pay close attention to every detail. My goal is to give you a website that looks great and works perfectly.
                         </p>
                     </div>
                 </motion.div>

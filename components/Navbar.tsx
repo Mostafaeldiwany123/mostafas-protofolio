@@ -21,7 +21,7 @@ const Navbar = () => {
                             M
                         </div>
                         <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-theme transition-colors">
-                            Mostafa<span className="text-white/40">.dev</span>
+                            Mostafa Eldiwany
                         </span>
                     </a>
 
