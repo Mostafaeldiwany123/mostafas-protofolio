@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-white text-gray-900 font-sans ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
+    <div className={`min-h-screen bg-white text-gray-900 font-sans font-light ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
       <Navbar />
       
       <main>

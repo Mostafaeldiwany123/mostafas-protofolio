@@ -30,7 +30,7 @@ const Process = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+          <h2 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
             How It Works
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -48,8 +48,8 @@ const Process = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white border border-gray-200 p-8 hover:border-gray-300 transition-colors"
             >
-              <div className="text-4xl font-bold text-gray-200 mb-4">{item.step}</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">{item.title}</h3>
+              <div className="text-4xl font-light text-gray-200 mb-4">{item.step}</div>
+              <h3 className="text-lg font-light text-gray-900 mb-3">{item.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}

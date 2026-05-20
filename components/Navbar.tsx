@@ -37,21 +37,21 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-4 left-0 right-0 z-[100] flex justify-center px-4 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 z-[100] w-full">
       <motion.nav
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
-        className={`pointer-events-auto flex items-center justify-between px-5 transition-all duration-300 border border-gray-200/80 bg-white/90 backdrop-blur-xl ${
-          scrolled ? 'w-full md:w-[65%] py-2.5 shadow-sm' : 'w-full md:w-[85%] py-2.5'
-        } rounded-xl`}
+        className={`flex items-center justify-between px-6 md:px-12 transition-all duration-300 bg-white/95 backdrop-blur-md border-b ${
+          scrolled ? 'py-4 shadow-sm border-gray-200' : 'py-6 border-transparent'
+        }`}
       >
         <div 
           className="flex items-center gap-2.5 shrink-0 cursor-pointer" 
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <img src="/logo.svg" alt="Mostafa Eldiwany" className="h-7 w-7 object-contain" />
-          <span className="text-sm font-bold tracking-tight text-gray-900 hidden sm:inline-block">Mostafa</span>
+          <img src="/logo.svg" alt="Mostafa Eldiwany" className="h-6 w-6 object-contain" />
+          <span className="text-base font-light tracking-wide text-gray-900 hidden sm:inline-block">Mostafa</span>
         </div>
         
         <div className="hidden md:flex items-center gap-5">
@@ -60,7 +60,7 @@ const Navbar = () => {
               key={link.id}
               href={`#${link.id}`} 
               onClick={(e) => handleScrollTo(e, link.id)}
-              className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
+              className="text-sm font-light text-gray-500 hover:text-gray-900 transition-colors"
             >
               {link.name}
             </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
             href="https://wa.me/201225932280?text=Hi%20Mostafa%2C%20I%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20discussing%20a%20web%20development%20project."
             target="_blank"
             rel="noreferrer"
-            className="bg-gray-900 text-white px-4 py-2 text-sm font-semibold hover:bg-gray-800 transition-all"
+            className="border border-gray-900 text-gray-900 px-5 py-2 text-sm font-light hover:bg-gray-900 hover:text-white transition-all"
           >
             Contact Me
           </a>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={(e) => handleScrollTo(e, link.id)}
-                className="text-gray-600 hover:text-gray-900 py-2.5 px-4 hover:bg-gray-50 transition-colors text-sm font-medium"
+                className="text-gray-600 hover:text-gray-900 py-3 px-4 hover:bg-gray-50 transition-colors text-sm font-light"
               >
                 {link.name}
               </a>
@@ -122,7 +122,7 @@ const Navbar = () => {
               href="https://wa.me/201225932280?text=Hi%20Mostafa%2C%20I%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20discussing%20a%20web%20development%20project."
               target="_blank"
               rel="noreferrer"
-              className="bg-gray-900 text-white px-4 py-2.5 text-sm font-semibold hover:bg-gray-800 transition-all text-center mt-2"
+              className="border border-gray-900 text-gray-900 px-4 py-3 text-sm font-light hover:bg-gray-900 hover:text-white transition-all text-center mt-2"
             >
               Contact Me
             </a>

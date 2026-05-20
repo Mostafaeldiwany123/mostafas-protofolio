@@ -22,7 +22,7 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+          <h2 className="text-2xl md:text-3xl font-light tracking-tight text-gray-900 mb-3">
             Complete Website Package
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -41,14 +41,14 @@ const Services = () => {
             <div>
               <p className="text-sm text-gray-500 mb-1">Starting at</p>
               <div className="flex items-baseline gap-1 flex-wrap">
-                <span className="text-4xl font-bold text-gray-900">8,000 EGP</span>
+                <span className="text-4xl font-light tracking-tight text-gray-900">8,000 EGP</span>
                 <span className="text-gray-500">/ project</span>
               </div>
               <p className="text-xs text-gray-400 mt-1">~$120 USD</p>
             </div>
             <a
               href="mailto:mostafafafa6@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-6 py-3 text-sm font-semibold hover:bg-gray-800 transition-all group"
+              className="inline-flex items-center justify-center gap-2 border border-gray-900 text-gray-900 px-6 py-3 text-sm font-light hover:bg-gray-900 hover:text-white transition-all group rounded-full"
             >
               Get Started
               <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
@@ -56,7 +56,7 @@ const Services = () => {
           </div>
 
           <div className="border-t border-gray-100 pt-8">
-            <p className="text-sm font-semibold text-gray-900 mb-4">What's included:</p>
+            <p className="text-sm font-light text-gray-900 mb-4 uppercase tracking-widest">What's included:</p>
             <div className="grid sm:grid-cols-2 gap-3">
               {includes.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">

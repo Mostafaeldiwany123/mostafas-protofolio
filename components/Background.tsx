@@ -45,7 +45,7 @@ const Background = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">What I Do</h2>
+          <h2 className="text-2xl font-light tracking-tight text-gray-900 mb-3">What I Do</h2>
           <p className="text-gray-600 mb-10 max-w-xl text-sm">
             I build complete web applications from scratch. You tell me what you need, and I deliver a working product.
           </p>
@@ -63,7 +63,7 @@ const Background = () => {
                 <div className="w-8 h-8 md:w-9 md:h-9 bg-gray-900 flex items-center justify-center mb-3">
                   <item.icon size={16} className="text-white" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-1 text-xs md:text-sm">{item.title}</h3>
+                <h3 className="font-light text-gray-900 mb-1 text-xs md:text-sm">{item.title}</h3>
                 <p className="text-xs md:text-sm text-gray-500">{item.desc}</p>
               </motion.div>
             ))}
