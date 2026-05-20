@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <a 
               href="mailto:mostafafafa6@gmail.com" 
-              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all"
+              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-all"
             >
               <Mail size={16} />
             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
               href="https://linkedin.com/in/mostafa-eldiwany-91b9a9319/" 
               target="_blank" 
               rel="noreferrer" 
-              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all"
+              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-all"
             >
               <Linkedin size={16} />
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://github.com/Mostafaeldiwany123" 
               target="_blank" 
               rel="noreferrer" 
-              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all"
+              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-all"
             >
               <Github size={16} />
             </a>
@@ -38,7 +38,7 @@ const Footer = () => {
               href="https://youtube.com/@DailyTifa" 
               target="_blank" 
               rel="noreferrer" 
-              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all"
+              className="flex items-center justify-center w-9 h-9 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-all"
             >
               <Youtube size={16} />
             </a>

@@ -37,38 +37,37 @@ const Background = () => {
   ];
 
   return (
-    <section id="background" className="py-16 md:py-20">
-      <div className="max-w-5xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-2xl font-light tracking-tight text-gray-900 mb-3">What I Do</h2>
-          <p className="text-gray-600 mb-10 max-w-xl text-sm">
-            I build complete web applications from scratch. You tell me what you need, and I deliver a working product.
-          </p>
+    <section id="background" className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+          <div className="lg:col-span-1">
+            <h2 className="text-3xl font-light tracking-tight text-gray-900 mb-4">What I Do</h2>
+            <p className="text-gray-500 text-sm font-light leading-relaxed">
+              I build complete web applications from scratch. You tell me what you need, and I deliver a working product.
+            </p>
+          </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
             {capabilities.map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="bg-gray-50 border border-gray-100 p-4 md:p-5 hover:border-gray-200 transition-colors"
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="flex gap-4"
               >
-                <div className="w-8 h-8 md:w-9 md:h-9 bg-gray-900 flex items-center justify-center mb-3">
-                  <item.icon size={16} className="text-white" />
+                <div className="w-10 h-10 bg-gray-50 border border-gray-100 rounded-full flex items-center justify-center text-gray-500 flex-shrink-0">
+                  <item.icon size={18} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-light text-gray-900 mb-1 text-xs md:text-sm">{item.title}</h3>
-                <p className="text-xs md:text-sm text-gray-500">{item.desc}</p>
+                <div>
+                  <h3 className="font-normal text-gray-900 mb-1 text-sm">{item.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed font-light">{item.desc}</p>
+                </div>
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
