@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border border-gray-100 shadow-sm p-2 bg-white mx-auto">
               <img
-                src="/images/me.jpg"
+                src="/images/hero-img.png"
                 alt="Mostafa Eldiwany"
                 className="w-full h-full object-cover rounded-full transition-all duration-700"
               />

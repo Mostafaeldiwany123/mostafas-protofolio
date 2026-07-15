@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
-import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Process from './components/Process';
 import Background from './components/Background';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -21,11 +20,10 @@ export default function App() {
       
       <main>
         <Hero />
-        <Services />
-        <Projects />
         <Process />
         <Testimonials />
         <Background />
+        <Contact />
       </main>
 
       <Footer />

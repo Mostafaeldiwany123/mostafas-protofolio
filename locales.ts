@@ -71,11 +71,7 @@ export const translations = {
                 title: "48 Hours",
                 desc: "Time is money. I focus on core requirements to deliver a polished, working product in 48 hours or less. No bloat, just result-driven development."
             },
-            pricing: {
-                badge: "PRICING",
-                title: "Best Value",
-                desc: "I offer premium quality at freelancer rates. You're paying for the code, not for a fancy agency office. Clean, maintainable, and affordable."
-            },
+
             quality: {
                 badge: "RELIABILITY",
                 title: "Quality Work",
@@ -201,11 +197,7 @@ export const translations = {
                 title: "٤٨ ساعة",
                 desc: "الوقت من ذهب. أركز على المتطلبات الأساسية لتقديم منتج مصقول وعامل في ٤٨ ساعة أو أقل. لا حشو، فقط تطوير موجه نحو النتائج."
             },
-            pricing: {
-                badge: "السعر",
-                title: "أفضل قيمة",
-                desc: "أقدم جودة ممتازة بأسعار المستقلين. أنت تدفع مقابل الكود، وليس لمكتب وكالة فاخر. نظيف، قابل للصيانة، وبسعر معقول."
-            },
+
             quality: {
                 badge: "الموثوقية",
                 title: "عمل عالي الجودة",
